@@ -11044,3 +11044,28 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+.contact-section {
+  text-align: center;
+  margin-top: 50px;
+}
+.contact-section a,
+.contact-section div {
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #000;
+  font-size: 27px;
+}
+.contact-section a:hover {
+  color: #0073b1; /* LinkedIn blue for LinkedIn icon */
+}
+.contact-section a.email:hover {
+  color: #c71610; /* Gmail red for email icon */
+}
+.contact-section a.github:hover {
+  color: #333; /* GitHub black for GitHub icon */
+}
+.contact-section div.location:hover {
+  color: #ff6347; /* Tomato color for location icon */
+}

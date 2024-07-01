@@ -30,10 +30,10 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">sobre mi</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contacto</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/indexEnglish.html">ENGLISH</a></li>
-                        
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                    
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/index.html">ESPAÑOL</a></li>
                     </ul>
                 </div>
             </div>
@@ -129,7 +129,7 @@
         <section class="page-section bg-primary text-white mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Sobre mi</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -138,9 +138,10 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Soy Blas Saidon, Fullstack Java Developer con experiencia en aplicaciones web e Ingeniero Químico. Me apasiona aprender nuevas tecnologías y aplicar mis conocimientos para resolver problemas. He trabajado en proyectos freelance que me han permitido consolidar mis habilidades técnicas y de comunicación. Busco oportunidades en IT para seguir creciendo profesionalmente y contribuir con mis habilidades.</p>
-                   </div>
-                    <div class="col-lg-4 me-auto"> <p class="lead" >Stack Tecnológico:
+                    <div class="col-lg-4 ms-auto"><p class="lead">I am Blas Saidon, a Fullstack Java Developer with experience in web applications and a Chemical Engineer. I am passionate about learning new technologies and applying my knowledge to solve problems. I have worked on freelance projects that have allowed me to consolidate my technical and communication skills. I am seeking opportunities in IT to continue growing professionally and contribute with my skills.</p>
+                    </div>
+                    <div class="col-lg-4 me-auto">
+                    <p class="lead">Tech Stack:
                         HTML, CSS, Bootstrap
                         Java, Spring Boot
                         JavaScript, React
@@ -171,52 +172,20 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        <div class="contact-section">
+                            <a href="https://www.linkedin.com/in/blassaidon/" target="_blank" class="linkedin">
+                                <i class="fab fa-linkedin"></i> linkedin.com/in/blassaidon
+                            </a>
+                            <a href="mailto:blasd.saidon@gmail.com" class="email">
+                                <i class="fas fa-envelope"></i> blasd.saidon@gmail.com
+                            </a>
+                            <a href="https://github.com/blasdsaidon/" target="_blank" class="github">
+                                <i class="fab fa-github"></i> github.com/blasdsaidon
+                            </a>
+                            <div class="location">
+                                <i class="fas fa-map-marker-alt"></i> Santa Fé, Argentina
                             </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -229,35 +198,33 @@
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Location</h4>
                         <p class="lead mb-0">
-                            2215 John Daniel Drive
+                            Santa Fé,
                             <br />
-                            Clark, MO 65243
+                            Argentina
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="mailto:blasd.saidon@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/blasdsaidon/"><i class="fab fa-fw fa-github"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/blassaidon/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                        <h4 class="text-uppercase mb-4">Blas saidon</h4>
                         <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
+                            Jul 2024
+                            
+                            
                         </p>
                     </div>
                 </div>
             </div>
         </footer>
         <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Your Website 2023</small></div>
-        </div>
+       
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
@@ -269,7 +236,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Real Estate Management System</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -279,20 +246,25 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/recording.gif" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Desarrollé una aplicación de gestión inmobiliaria para registrar clientes, propiedades y contratos. El sistema automatizó la generación de cuotas y recibos, presentó alertas de plazos y permitió la carga de documentos.
+                                   <div class="row align-items-center "> 
+                                    <div  class="col-lg-6 ms-auto" > <p class="mb-4">Developed a real estate management application for registering clients, properties, and contracts. The system automated installment and receipt generation, featured deadline alerts, and allowed document uploads.</p> </div>
+                                        
+                                       <div  class="col-lg-6 ms-auto" > <p class="mb-4" >Technologies used:</p>
+                                        <ul class="text-start" >
+                                        <li>Backend: Spring Boot, Spring Security, Spring Data JPA</li>
+                                        <li>Frontend: Thymeleaf, HTML, CSS, Bootstrap</li>
+                                        <li>Database: MySQL</li>
+                                        <li>Deployment: Docker Desktop with docker-compose</li>
+                                        <li>Client-side: JavaScript for API usage and PDF generation</li>
+                                        <li>Version Control: Git</li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                                        Tecnologías utilizadas:
-                                        
-                                        Backend: Spring Boot, Spring Security, Spring Data JPA
-                                        Frontend: Thymeleaf, HTML, CSS, Bootstrap
-                                        Base de Datos: MySQL
-                                        Despliegue: Docker Desktop con docker-compose
-                                        Cliente: JavaScript para uso de APIs y generación de PDF
-                                        Control de Versiones: Git</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        
-                                    </button>
+                                        <button class="btn btn-primary" data-bs-dismiss="modal">
+                                            <i class="fas fa-xmark fa-fw"></i>
+                                            Close Window
+                                        </button>
                                 </div>
                             </div>
                         </div>
