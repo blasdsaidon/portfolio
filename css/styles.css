@@ -11069,3 +11069,9 @@ html {
 .contact-section div.location:hover {
   color: #ff6347; /* Tomato color for location icon */
 }
+.vinculo{
+  color: white;
+}
+.vinculo:hover{
+  color: grey;
+}
